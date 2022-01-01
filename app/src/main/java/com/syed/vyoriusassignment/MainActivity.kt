@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         map_image=findViewById(R.id.map_image)
+        //
 
         // When the compile and target version is higher than 22, please request the
         // following permissions at runtime to ensure the
