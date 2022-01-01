@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
 }
-apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 31
@@ -20,7 +19,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            multiDexKeepFile file('multidex-config.txt')
+
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -50,7 +49,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
-
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'com.google.firebase:firebase-firestore:18.0.0'
+    implementation 'com.google.firebase:firebase-auth:16.1.0'
     implementation "com.google.android.gms:play-services-base:16.1.0"
     implementation "com.google.android.gms:play-services-gcm:16.0.0"
     implementation 'de.hdodenhof:circleimageview:3.1.0'
@@ -59,9 +60,4 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation ('com.dji:dji-uxsdk:4.11')
     compileOnly ('com.dji:dji-sdk-provided:4.11')
-    implementation "androidx.core:core-ktx:+"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-}
-repositories {
-    mavenCentral()
 }

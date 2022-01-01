@@ -50,7 +50,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VyoriusAssignment">
-
+        <activity android:name=".MainActivity2"></activity>
         <!-- DJI SDK -->
         <uses-library android:name="com.android.future.usb.accessory" />
 
@@ -84,14 +84,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity2"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/title_activity_demo"
-            android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
-
         </activity>
     </application>
 

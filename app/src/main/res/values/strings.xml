@@ -1,5 +1,3 @@
 <resources>
     <string name="app_name">VyoriusAssignment</string>
-    <string name="title_activity_demo">GSDemoActivity</string>
-    <string name="google_app_id">Google_App_ID_String</string>
 </resources>
